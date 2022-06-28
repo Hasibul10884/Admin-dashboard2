@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>SB Admin Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{url('backend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
@@ -35,9 +35,9 @@
 
             <!-- Main Content -->
             <div id="content">
-                @yield('backend_content')
                 @include('backend.fixed.header')
                 @include('backend.fixed.sidebar')
+                @yield('backend_content')
                 @include('backend.fixed.footer')
 
 
