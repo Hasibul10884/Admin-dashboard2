@@ -1,5 +1,8 @@
 @extends('backend.master') 
 @section('backend_content')
+
+<button type="button" class="btn btn-success">Success</button>
+
 <table class="table">
     <thead>
       <tr>

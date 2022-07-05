@@ -36,8 +36,8 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 
-                <a class="collapse-item" href="buttons.html">Category List</a>
-                <a class="collapse-item" href="cards.html">Add Category</a>
+                <a class="collapse-item" href="{{route('list.category')}}">Category List</a>
+                <a class="collapse-item" href="{{route('add.category')}}">Add Category</a>
                 <a class="collapse-item" href="cards.html">Edit Category</a>
             </div>
         </div>
@@ -54,8 +54,8 @@
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 
-                <a class="collapse-item" href="utilities-color.html">Product List</a>
-                <a class="collapse-item" href="utilities-border.html">Add product</a>
+                <a class="collapse-item" href="{{route('list.product')}}">Product List</a>
+                <a class="collapse-item" href="{{route('add.product')}}">Add product</a>
                 <a class="collapse-item" href="utilities-animation.html">Edit Product</a>
                 
             </div>

@@ -18,7 +18,11 @@ use App\Http\Controllers\PruductController;
 
 Route::get('/', [DashboardController::class,'index'])->name('dashboard');
 Route::get('/dashboard', [DashboardController::class,'viewDashboard'])->name('dashboard1');
-
+//category_List
 Route::get('/category/list',[CategoryController::class,'list'])->name('list.category');
+Route::get('/category/add',[CategoryController::class,'add'])->name('add.category');
 
+//Product_List
 Route::get('/product/list',[PruductController::class,'list'])->name('list.product');
+Route::get('/product/add',[PruductController::class,'add'])->name('add.product');
+
