@@ -3,6 +3,7 @@
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\PruductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,5 @@ Route::get('/', [DashboardController::class,'index'])->name('dashboard');
 Route::get('/dashboard', [DashboardController::class,'viewDashboard'])->name('dashboard1');
 
 Route::get('/category/list',[CategoryController::class,'list'])->name('list.category');
+
+Route::get('/product/list',[PruductController::class,'list'])->name('list.product');
