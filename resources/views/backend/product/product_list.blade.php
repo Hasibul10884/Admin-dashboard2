@@ -15,10 +15,16 @@
       </tr>
     </thead>
     <tbody>
+      @foreach($products as $key=>$data)
       <tr>
-
+          <td>{{$key+1}}</td>  
+          <td>{{$data->name}}</td>  
+          <td>{{$data->description}}</td>
+          <td>{{$data->photo}}</td> 
+          <td>{{$data->price}}</td>
+          <td>{{$data->quantity}}</td>   
       </tr>
-
+      @endforeach
     </tbody>
   </table>
 

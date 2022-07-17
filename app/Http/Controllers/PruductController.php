@@ -9,7 +9,8 @@ class PruductController extends Controller
 
 {
    public function list(){
-    return view('backend.product.product_list');
+      $products = Product::all();
+    return view('backend.product.product_list', compact('products'));
    }
 
    public function add(){
@@ -29,11 +30,9 @@ class PruductController extends Controller
          // 'database column price' => $request-> input field name
          'price' =>$request->price,
          // 'database column quantity' => $request-> input field name
-         'quantity' =>$request->quantity,
-
-
-
+         'quantity' =>$request->qty,
 
       ]);
+      return redirect()->route('list.product');
    }
 }

@@ -1,6 +1,7 @@
 @extends('backend.master') 
 @section('backend_content')
 
+<a href="{{route('add.category')}}" class="btn btn-success">Create</a>
 <table class="table">
     <thead>
       <tr>
