@@ -25,4 +25,5 @@ Route::get('/category/add',[CategoryController::class,'add'])->name('add.categor
 //Product_List
 Route::get('/product/list',[PruductController::class,'list'])->name('list.product');
 Route::get('/product/add',[PruductController::class,'add'])->name('add.product');
+Route::post('/product/store',[PruductController::class, 'store'])->name('product.store');
 

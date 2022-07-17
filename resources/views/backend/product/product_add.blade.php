@@ -1,23 +1,22 @@
 @extends('backend.master') 
 @section('backend_content')
 <h1>Create New Product</h1>
-<form>
-
+<form action="{{route('product.store')}}" method="POST">
+    @csrf
     <label for="">Product Name *</label>
-    <input type="text" class="form-control" name="product_name" required>
+    <input type="text" class="form-control" name="name" required>
     <label for="">Product Price *</label>
-    <input type="number" class="form-control" name="product_price" required min="1">
+    <input type="number" class="form-control" name="price" required min="1">
     <label for="">Product Qty *</label>
-    <input type="number" class="form-control" name="product_qty" required min="1">
+    <input type="number" class="form-control" name="qty" required min="1">
     <label for="">Product Description (optional)</label>
-    <input type="text" class="form-control" name="product_desc">
+    <input type="text" class="form-control" name="description">
+    <label for="">Product Photo</label>
+    <input type="file" class="form-control" name="photo">
 
-    <label for="">Select Category</label>
-    <select class="form-select" aria-label="Default select example" name="category">
 
-    </select>
 
-    <button type="submit" class="btn btn-success">Create</button>
+    <button type="submit" class="btn btn-success">Submit</button>
 
 </form>
 
