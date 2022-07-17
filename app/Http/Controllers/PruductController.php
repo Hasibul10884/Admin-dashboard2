@@ -26,6 +26,11 @@ class PruductController extends Controller
          'description' =>$request->description,
          // 'database column photo' => $request-> input field name
          'photo' =>$request->photo,
+         // 'database column price' => $request-> input field name
+         'price' =>$request->price,
+         // 'database column quantity' => $request-> input field name
+         'quantity' =>$request->quantity,
+
 
 
 
