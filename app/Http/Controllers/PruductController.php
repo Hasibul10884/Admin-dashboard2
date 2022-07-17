@@ -22,9 +22,13 @@ class PruductController extends Controller
       Product::create([
          // 'database column name' => $request->input field name
          'name' =>$request->name,
-         // 'databse column descripstion' => $request-> input field name
+         // 'database column descripstion' => $request-> input field name
          'description' =>$request->description,
-         
+         // 'database column photo' => $request-> input field name
+         'photo' =>$request->photo,
+
+
+
       ]);
    }
 }
