@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>OBAY Admin Dashboard</title>
+    <title>EBAY Admin Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{url('backend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
