@@ -46,7 +46,7 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                        @yield('backend_content')
+                    @yield('backend_content')
 
                 </div>
                 <!-- /.container-fluid -->

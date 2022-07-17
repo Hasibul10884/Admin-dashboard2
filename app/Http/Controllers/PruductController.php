@@ -9,14 +9,14 @@ class PruductController extends Controller
 
 {
    public function list(){
-      $products = Product::all();
-    return view('backend.product.product_list', compact('products'));
+   $products = Product::all();
+   return view('backend.product.product_list', compact('products'));
    }
 
    public function add(){
-    return view('backend.product.product_add');
+   return view('backend.product.product_add');
    }
-
+   
    public function store(Request $request){
       // dd($request);
       // dd($request->name);

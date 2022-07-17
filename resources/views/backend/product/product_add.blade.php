@@ -1,4 +1,4 @@
-@extends('backend.master') 
+@extends('backend.master')
 @section('backend_content')
 <h1>Create New Product</h1>
 <form action="{{route('product.store')}}" method="POST">
