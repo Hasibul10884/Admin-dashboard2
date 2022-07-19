@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\Product;
 
@@ -14,7 +15,8 @@ class PruductController extends Controller
    }
 
    public function add(){
-   return view('backend.product.product_add');
+      $categories = Category::all();
+   return view('backend.product.product_add', compact('categories'));
    }
    
    public function store(Request $request){
@@ -23,14 +25,11 @@ class PruductController extends Controller
       Product::create([
          // 'database column name' => $request->input field name
          'name' =>$request->name,
-         // 'database column descripstion' => $request-> input field name
          'description' =>$request->description,
-         // 'database column photo' => $request-> input field name
          'photo' =>$request->photo,
-         // 'database column price' => $request-> input field name
          'price' =>$request->price,
-         // 'database column quantity' => $request-> input field name
          'quantity' =>$request->qty,
+         'category'=>$request->category,
 
       ]);
       return redirect()->route('list.product');

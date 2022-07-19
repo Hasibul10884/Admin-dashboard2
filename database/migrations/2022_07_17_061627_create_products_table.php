@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('description');
             $table->string('photo')->nullable();
             $table->float('price');
+            $table->string('category');
             $table->integer('quantity');
             $table->timestamps();
         });

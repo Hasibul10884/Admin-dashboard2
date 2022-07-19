@@ -2,7 +2,7 @@
 @section('backend_content')
 
 <a href="{{route('add.category')}}" class="btn btn-success">Create</a>
-<table class="table">
+<table class="table table-striped table-hover">
     <thead>
         <tr>
             <th scope="col">S.N</th>

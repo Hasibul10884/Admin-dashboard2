@@ -11,7 +11,9 @@
             <th scope="col">Description</th>
             <th scope="col">Photo</th>
             <th scope="col">Price</th>
+            <th scope="col">Category</th>
             <th scope="col">Quantity</th>
+            <th scope="col">Action</th>
         </tr>
     </thead>
     <tbody>
@@ -22,7 +24,11 @@
             <td>{{$data->description}}</td>
             <td>{{$data->photo}}</td>
             <td>{{$data->price}}</td>
+            <td>{{$data->category}}</td>
             <td>{{$data->quantity}}</td>
+            <td>
+                <a href="" class="btn btn-outline-danger">Delete</a>
+            </td>
         </tr>
         @endforeach
     </tbody>
