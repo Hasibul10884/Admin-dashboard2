@@ -24,6 +24,9 @@ class CategoryController extends Controller
             'name' =>$request->name,
             'description' =>$request->description,
             'photo' =>$request->photo,
+            'status' =>$request->status,
+            'action' =>$request->action,
+
 
         ]);
         return redirect()->route('list.category');

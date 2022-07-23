@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\BrandController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\PruductController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +29,10 @@ Route::post('/category/store',[CategoryController::class,'store'])->name('catego
 Route::get('/product/list',[PruductController::class,'list'])->name('list.product');
 Route::get('/product/add',[PruductController::class,'add'])->name('add.product');
 Route::post('/product/store',[PruductController::class, 'store'])->name('product.store');
+
+//brand_List
+Route::get('/brand/list',[BrandController::class,'list'])->name('list.brand');
+Route::get('/brand/add',[BrandController::class,'add'])->name('add.brand');
+Route::post('/brand/store',[BrandController::class, 'store'])->name('brand.store');
+
+

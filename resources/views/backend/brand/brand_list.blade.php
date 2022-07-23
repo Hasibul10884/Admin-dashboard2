@@ -1,7 +1,7 @@
 @extends('backend.master')
 @section('backend_content')
 
-<a href="{{route('add.category')}}" class="btn btn-success">Create</a>
+<a href="{{route('add.brand')}}" class="btn btn-success">Create</a>
 <table class="table table-striped table-hover">
     <thead>
         <tr>
@@ -15,7 +15,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach($categories as $key=>$data)
+        @foreach($brands as $key=>$data)
         <tr>
             <td>{{$key+1}}</td>
             <td>{{$data->name}}</td>

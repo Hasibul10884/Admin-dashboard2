@@ -48,7 +48,7 @@
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
             aria-expanded="true" aria-controls="collapseUtilities">
             <i class="fas fa-fw fa-wrench"></i>
-            <span>product</span>
+            <span>Product</span>
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
             data-parent="#accordionSidebar">
@@ -57,6 +57,25 @@
                 <a class="collapse-item" href="{{route('list.product')}}">Product List</a>
                 <a class="collapse-item" href="{{route('add.product')}}">Add product</a>
                 <a class="collapse-item" href="utilities-animation.html">Edit Product</a>
+                
+            </div>
+        </div>
+    </li>
+
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+            aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Brand</span>
+        </a>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                
+                <a class="collapse-item" href="{{route('list.brand')}}">Brand List</a>
+                <a class="collapse-item" href="{{route('add.brand')}}">Add brand</a>
+                <a class="collapse-item" href="utilities-animation.html">Edit brand</a>
                 
             </div>
         </div>
