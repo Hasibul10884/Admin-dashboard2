@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\PruductController;
+use App\Http\Controllers\HomeController;
 
 
 /*
@@ -20,6 +21,11 @@ use App\Http\Controllers\PruductController;
 
 Route::get('/', [DashboardController::class,'index'])->name('dashboard');
 Route::get('/dashboard', [DashboardController::class,'viewDashboard'])->name('dashboard1');
+Route::get('/',[HomeController::class,'home'])->name('home');
+Route::get('/admin',[DashboardController::class,'index'])->name('dashboard');
+
+
+
 //category_List
 Route::get('/category/list',[CategoryController::class,'list'])->name('list.category');
 Route::get('/category/add',[CategoryController::class,'add'])->name('add.category');
