@@ -44,6 +44,92 @@
             </div>
         </li>
 
+
+
+
+
+<button type="button" class="btn btn-success d-table my-5 mx-5" data-bs-toggle="modal" data-bs-target="#ModalForm1">
+    Login
+  </button>
+
+  <button type="button" class="btn btn-success d-table my-5 mx-5" data-bs-toggle="modal" data-bs-target="#ModalForm2">
+    Registarter
+  </button>
+  
+  <!-- Login -->
+  <div class="modal fade" id="ModalForm1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+            <h5 class="modal-title">Modal Login Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- Login Form -->
+          <form action="{{route('login')}}" method="post">
+            @csrf
+
+            <div class="modal-body">
+              <div class="mb-3">
+                  <label for="name">Email<span class="text-danger">*</span></label>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Enter Username">
+              </div>
+  
+              <div class="mb-3">
+                  <label for="Password">Password<span class="text-danger">*</span></label>
+                  <input type="password" name="password" class="form-control" id="Password" placeholder="Enter Password">
+              </div>
+
+            </div>
+            <div class="modal-footer pt-4">                  
+              <button type="submit" class="btn btn-success mx-auto w-100">Login</button>
+            </div>
+            
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Register -->
+    <div class="modal fade" id="ModalForm2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <!-- Login Form -->
+              <form action="{{route('registration')}}" method="post">
+                @csrf
+                <div class="modal-header">
+                  <h5 class="modal-title">Register Form</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                      <label for="name">Username<span class="text-danger">*</span></label>
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Enter Username">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="email">Email<span class="text-danger">*</span></label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email">
+                </div>
+      
+                  <div class="mb-3">
+                      <label for="password">Password<span class="text-danger">*</span></label>
+                      <input type="password" name="password" class="form-control" id="password" placeholder="Enter Password">
+                  </div>
+
+                </div>
+                <div class="modal-footer pt-4">                  
+                  <button type="submit" class="btn btn-success mx-auto w-100">Register</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    
+
+
+
         <!-- Nav Item - Alerts -->
         <li class="nav-item dropdown no-arrow mx-1">
             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
@@ -156,6 +242,8 @@
                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
             </div>
         </li>
+
+        
 
         <div class="topbar-divider d-none d-sm-block"></div>
 
